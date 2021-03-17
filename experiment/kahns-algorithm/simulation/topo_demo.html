@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+</head>
+  <div class="instruction-box" id="instructions">
+    <button class="collapsible"> Instructions </button>
+    <div class ="content">
+      <li>Click on <b>Start</b> to start demo with given graph</li>
+      <li>After clicking start click on <b>Next</b> to move a step forward</li>
+      <li>You can click on <b>Pause</b> or <b>Play</b> to pause or play the demo and adjust speed using speed adjust slider</li>
+      <li>Click on <b>New Graph</b> to start over with a new graph</li>
+      <li>Click on <b>Restart</b> to start over with a same graph</li>
+      <li>Zoom or Adjust graph by dragging nodes according to your convience</li>  
+    </div>
+  </div> 
+  <div style="font-size: 1.5vw;">
+    <p id="seq"><b>Selected Order : </b></p>
+  </div>
+  <center>   
+    <div id="graph"></div> 
+  </center>
+  <div id="instruction"class="comment-box">
+    <b>Observations</b><br>
+    <p id = "ins"> </p>
+  </div>
+  <center>
+    <div >
+      <p id= "ranger">
+        Min.Speed
+        <input type="range" id="myRange" class="slider">
+        Max.Speed
+      </p>
+    </div>
+  </center>
+  <div class="buttons">
+    <button id="startnext" class="button-input">Start</button>
+    <button id="rege" class="button-input">New Graph</button>
+    <button id="res" class="button-input">Reset</button>
+    <button id="pause" class="button-input">Pause</button>  
+  </div>
+  <title>Topological Sort</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="docs/static/libs/vis.min.js"></script>
+  <script src="js/Algo.js"></script> 
+  <script src="js/data.js"></script> 
+  <link href="docs/static/libs/vis.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../assets/css/common-styles.css">
+  <script src="docs/static/libs/vis.anim.js"></script>
+  <link href="css/mst.css" rel="stylesheet" type="text/css" />
+  <script src="docs/static/libs/vis.anim.js"></script>
+  <script src="js/topo_demo.js"></script> 
+<script src="../../assets/js/instruction-box.js"></script>
+</body>
+</html>
