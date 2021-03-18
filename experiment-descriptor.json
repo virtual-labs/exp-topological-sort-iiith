@@ -88,7 +88,7 @@
           "label": "Kahn's Algorithm: Demo",
           "content-type": "simulation",
           "source": "simulation/topo_demo.html",
-          "target": "topo_demo.html.html"
+          "target": "topo_demo.html"
         },
 	
         
@@ -147,8 +147,8 @@
       "unit-type": "task",
       "label": "Post Test Quiz",
       "content-type": "assesment",
-      "source": "post-test.js",
-      "target": "post-test.html"
+      "source": "posttest.js",
+      "target": "posttest.html"
     },
        
     {
