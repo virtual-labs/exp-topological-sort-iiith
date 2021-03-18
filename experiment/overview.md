@@ -17,7 +17,7 @@ This experiment requires you to have basic knowledge about:
 
 And above all, a curiosity to learn and explore!
 
-###Overview of the Experiment
+### Overview of the Experiment
 
    - The aim of this experiment is to understand the Topological Sort algorithms - Depth First Search and Kahn's algorithm along with their time and space complexity.
    - The experiment features a series of modules with video lectures, interactive demonstrations, simulations, hands-on practice exercises and quizzes for self analysis.
