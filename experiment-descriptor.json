@@ -62,7 +62,7 @@
 
     {
       "unit-type": "lu",
-      "label": "Kahn's Algorithm",
+      "label": "Kahns Algorithm",
       "basedir": "kahns-algorithm",
       "units": [
         {
