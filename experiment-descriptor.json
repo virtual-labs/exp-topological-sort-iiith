@@ -1,0 +1,156 @@
+{
+  "unit-type": "lu",
+  "label": "Topological Sort",
+  "basedir": ".",
+  "units": [
+    {
+      "unit-type": "aim"
+    },
+    {
+      "unit-type": "task",
+      "label": "Overview",
+      "content-type": "video",
+      "source": "overview.md",
+      "target": "overview.html"
+    },
+    {
+      "unit-type": "task",
+      "label": "Recap",
+      "content-type": "video",
+      "source": "recap.md",
+      "target": "recap.html"
+    },
+    {
+      "unit-type": "task",
+      "label": "Pre Test Quiz",
+      "content-type": "assesment",
+      "source": "pretest.js",
+      "target": "pretest.html"
+    },
+	{
+      "unit-type": "lu",
+      "label": "Topological Sort",
+      "basedir": "topological-sort",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+        {
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Basic View",
+          "content-type": "video",
+          "source": "basic-view.md",
+          "target": "basic-view.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Through DFS",
+          "content-type": "video",
+          "source": "through-dfs.md",
+          "target": "through-dfs.html"
+        }
+	
+      ]
+    },
+
+    {
+      "unit-type": "lu",
+      "label": "Kahns Algorithm",
+      "basedir": "kahns-algorithm",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+        {
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Basic Concept & Algorithm",
+          "content-type": "video",
+          "source": "basic-concept-algorithm.md",
+          "target": "basic-concept-algorithm.html"
+        },
+        
+        {
+          "unit-type": "task",
+          "label": "Kahn's Algorithm: Demo",
+          "content-type": "simulation",
+          "source": "simulation/topo_demo.html",
+          "target": "topo_demo.html"
+        },
+	
+        
+	{
+          "unit-type": "task",
+          "label": "Kahn's Algorithm: Practice",
+          "content-type": "simulation",
+          "source": "simulation/topo_practice.html",
+          "target": "topo_practice.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Kahn's Algorithm: Exercise",
+          "content-type": "simulation",
+          "source": "simulation/topo_exercise.html",
+          "target": "topo_exercise.html"
+        }
+        
+      
+      ]
+    },
+   
+        {
+      "unit-type": "lu",
+      "label": "Analysis",
+      "basedir": "analysis",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+	{
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Time and Space Complexity",
+          "content-type": "video",
+          "source": "time-and-space-complexity.md",
+          "target": "time-and-space-complexity.html"
+        }
+        
+      ]
+    },
+    
+    {
+      "unit-type": "task",
+      "label": "Post Test Quiz",
+      "content-type": "assesment",
+      "source": "posttest.js",
+      "target": "posttest.html"
+    },
+       
+    {
+      "unit-type": "task",
+      "label": "Further Readings/References",
+      "content-type": "text",
+      "source": "further-reading-and-references.md",
+      "target": "further-reading-and-references.html"
+    }
+  ]
+}
