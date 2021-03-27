@@ -1,3 +1,6 @@
+### Video Demo for Kahn's Algorithm
+<iframe src="https://www.youtube.com/embed/Y5FQYaLFjuE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ### Algorithm
 
 Steps involved in finding the topological ordering of a DAG:
@@ -27,5 +30,4 @@ for each edge(src,dest) in Edges<br>
   indegree[dest]++;<br>
 Video Demo for Kahn's
 
-### Video Demo for Kahn's Algorithm
-<iframe src="https://www.youtube.com/embed/Y5FQYaLFjuE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+

@@ -37,18 +37,12 @@
         },
         {
           "unit-type": "task",
-          "label": "Overview",
+          "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-	{
-          "unit-type": "task",
-          "label": "Basic View",
-          "content-type": "video",
-          "source": "basic-view.md",
-          "target": "basic-view.html"
-        },
+	
         {
           "unit-type": "task",
           "label": "Through DFS",
@@ -71,7 +65,7 @@
         
 	{
           "unit-type": "task",
-          "label": "Basic Concept ",
+          "label": "Concept ",
           "content-type": "video",
           "source": "basic-concept-algorithm.md",
           "target": "basic-concept-algorithm.html"
