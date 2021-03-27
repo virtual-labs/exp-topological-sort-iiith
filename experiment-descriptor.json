@@ -37,18 +37,12 @@
         },
         {
           "unit-type": "task",
-          "label": "Overview",
+          "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-	{
-          "unit-type": "task",
-          "label": "Basic View",
-          "content-type": "video",
-          "source": "basic-view.md",
-          "target": "basic-view.html"
-        },
+	
         {
           "unit-type": "task",
           "label": "Through DFS",
@@ -68,16 +62,10 @@
         {
           "unit-type": "aim"
         },
-        {
-          "unit-type": "task",
-          "label": "Overview",
-          "content-type": "video",
-          "source": "overview.md",
-          "target": "overview.html"
-        },
+        
 	{
           "unit-type": "task",
-          "label": "Basic Concept & Algorithm",
+          "label": "Concept ",
           "content-type": "video",
           "source": "basic-concept-algorithm.md",
           "target": "basic-concept-algorithm.html"
@@ -85,7 +73,7 @@
         
         {
           "unit-type": "task",
-          "label": "Kahn's Algorithm: Demo",
+          "label": " Demo",
           "content-type": "simulation",
           "source": "simulation/topo_demo.html",
           "target": "topo_demo.html"
@@ -94,14 +82,14 @@
         
 	{
           "unit-type": "task",
-          "label": "Kahn's Algorithm: Practice",
+          "label": " Practice",
           "content-type": "simulation",
           "source": "simulation/topo_practice.html",
           "target": "topo_practice.html"
         },
 	{
           "unit-type": "task",
-          "label": "Kahn's Algorithm: Exercise",
+          "label": " Exercise",
           "content-type": "simulation",
           "source": "simulation/topo_exercise.html",
           "target": "topo_exercise.html"
@@ -119,13 +107,7 @@
         {
           "unit-type": "aim"
         },
-	{
-          "unit-type": "task",
-          "label": "Overview",
-          "content-type": "video",
-          "source": "overview.md",
-          "target": "overview.html"
-        },
+	
         {
           "unit-type": "task",
           "label": "Time and Space Complexity",
