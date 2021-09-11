@@ -1,5 +1,5 @@
 br {
-    font-size: 2vw;
+    /* font-size: 2vw; */
 }
 
 #graph {
@@ -11,7 +11,7 @@ br {
 #que{
   position: relative;
   font-family:arial;
-  font-size: 1.5vw;
+  /* font-size: 1.5vw; */
   padding:1vw;
   }
 
@@ -69,7 +69,7 @@ br {
   #ranger {
     
     position: relative;
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
     width:40%;
     z-index: 1;
    }
