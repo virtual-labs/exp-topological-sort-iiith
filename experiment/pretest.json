@@ -1,1 +1,80 @@
-[{"question":"1. Which of these best describes a graph?","answers":{"a":"A linear data structure with finite nodes and edges ","b":"A non-linear data structure consisting of nodes and edges ","c":"A data structure which has infinite nodes and edges ","d":"All of the above "},"correctAnswer":"b"},{"question":"2. How many number of edges need to be present in a complete graph having n vertices?","answers":{"a":"(n*(n-1))/2 ","b":"(n*(n+1))/2","c":" n","d":"None of these "},"correctAnswer":"a"},{"question":"3. What does it mean when we say that an algorithm X is asymptotically more efficient than Y? ","answers":{"a":"X will always be a better choice for small inputs","b":"X will always be a better choice for large inputs ","c":"Y will always be a better choice for small inputs ","d":"X will always be a better choice for all inputs"},"correctAnswer":"b"},{"question":"4. int i, j, k = 0;<br>for (i = n / 2; i <= n; i++){<br>for (j = 2; j <= n; j = j * 2){<br>k = k + n / 2; }<br>}<br>What is the time complexity for the above code? ","answers":{"a":"O(n)","b":"O(N + M) time, O(N + M) space ","c":"O(N + M) time, O(1) space","d":" O(N * M) time, O(N + M) space "},"correctAnswer":"c"},{"question":"5. ans = 0;<br>for (i = n; i >= 1; i /= 2){<br>for (j = 1; j <=m ; j *=2 ){<br>ans += (i * j);<br>}<br>}<br>What is the time complexity for the above code?  ","answers":{"a":"O(n*m)","b":" O(logmlogn) ","c":"O(mlogn)","d":" O(nlogm)  "},"correctAnswer":"d"}]
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. Which of the following values should be non-zero in a graph ?",
+            "answers": {
+                "a": "Number of Edges",
+                "b": "Number of Vertices",
+                "c": "Number of Cycles.",
+                "d": "All of the above."
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Graph with no edges is called an edgeless graph.",
+                "b": "Graph should have at least 1 vertex.<br>\u201cA graph is defined as a finite set of vertices which might be connected with edges.\u201d",
+                "c": "Graph with no cycles is called a tree."
+            },
+            "difficulty": "beginner."
+        },
+        {
+            "question": "2. How many edges are there in a complete graph ( n = number of vertices) ?",
+            "answers": {
+                "a": "n*(n+1)/2",
+                "b": "n",
+                "c": "n*(n-1)/2",
+                "d": "None of these"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "c": "\u201cA complete graph is a graph in which there is an edge between each pair of vertices. So number of edges = nC2  = n*(n-1)/2 .\u201d"
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "3. What is the special feature of a Regular Graph ?",
+            "answers": {
+                "a": "All the vertices have the same degree.",
+                "b": "There is an edge between each pair of vertices.",
+                "c": "It contains only one vertex with no edges.",
+                "d": "It contains at least one cycle."
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "Definition in question",
+                "b": "Complete graph is the graph when there are edges between each pair of vertices.",
+                "c": "Graph with only vertex and no edges is called a Trivial Graph.",
+                "d": "Graph which contains at least one cycle is called a Cyclic Graph."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "4. What is the maximum degree a node can have in a simple graph?<br>(n = number of nodes in graph)",
+            "answers": {
+                "a": "n",
+                "b": "2*n",
+                "c": "n+1",
+                "d": "n-1"
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "d": "For some node i , the degree of the node is defined as the number of nodes which are connected by a single edge with the node i. In simple Graph there are no self-loop and multiple edges between two nodes. So maximum degree = n-1."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "5. An adjacency matrix representation of a graph contains information of :",
+            "answers": {
+                "a": "Nodes",
+                "b": "Edges",
+                "c": "Direction",
+                "d": "All of the above"
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "d": "\u201cAn adjacency matrix is a NxN matrix where N = number of nodes in graph. A Cell of the matrix ai,j is 1 if there exists a Edge from node i to node j else ai,j  is 0.\u201d"
+            },
+            "difficulty": "intermediate"
+        }
+    ]
+}
