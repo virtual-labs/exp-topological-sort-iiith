@@ -20,6 +20,13 @@
       "source": "recap.md",
       "target": "recap.html"
     },
+    {
+      "unit-type": "task",
+      "label": "Pre Test Quiz",
+      "content-type": "assesment",
+      "source": "pretest.js",
+      "target": "pretest.html"
+    },
 	{
       "unit-type": "lu",
       "label": "Topological Sort",
@@ -111,7 +118,14 @@
         
       ]
     },
-
+    
+    {
+      "unit-type": "task",
+      "label": "Post Test Quiz",
+      "content-type": "assesment",
+      "source": "posttest.js",
+      "target": "posttest.html"
+    },
        
     {
       "unit-type": "task",
