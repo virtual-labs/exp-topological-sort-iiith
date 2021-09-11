@@ -24,7 +24,7 @@
       "unit-type": "task",
       "label": "Pre Test Quiz",
       "content-type": "assesment",
-      "source": "pretest.js",
+      "source": "pretest.json",
       "target": "pretest.html"
     },
 	{
@@ -49,8 +49,14 @@
           "content-type": "video",
           "source": "through-dfs.md",
           "target": "through-dfs.html"
-        }
-	
+        },
+        {
+          "unit-type": "task",
+          "label": "Quiz",
+          "content-type": "assesment",
+          "source": "topo-quiz.json",
+          "target": "topo-quiz.html"
+        }    
       ]
     },
 
@@ -93,8 +99,14 @@
           "content-type": "simulation",
           "source": "simulation/topo_exercise.html",
           "target": "topo_exercise.html"
-        }
-        
+        },
+        {
+          "unit-type": "task",
+          "label": "Quiz",
+          "content-type": "assesment",
+          "source": "kahns-quiz.json",
+          "target": "kahns-quiz.html"
+        }           
       
       ]
     },
@@ -114,8 +126,14 @@
           "content-type": "video",
           "source": "time-and-space-complexity.md",
           "target": "time-and-space-complexity.html"
-        }
-        
+        },
+        {
+          "unit-type": "task",
+          "label": "Quiz",
+          "content-type": "assesment",
+          "source": "analysis-quiz.json",
+          "target": "analysis-quiz.html"
+        }            
       ]
     },
     
@@ -123,7 +141,7 @@
       "unit-type": "task",
       "label": "Post Test Quiz",
       "content-type": "assesment",
-      "source": "posttest.js",
+      "source": "posttest.json",
       "target": "posttest.html"
     },
        
