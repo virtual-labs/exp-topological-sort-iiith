@@ -1,0 +1,31 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. What is meant by the indegree of a vertex ?",
+            "answers": {
+                "a": "It is  the count of the number of edges pointed towards the vertex from other vertices.",
+                "b": "It is the count of the number of edges such that starting point is the vertex.",
+                "c": "It is the total number of edges connected to the vertex.",
+                "d": "None of the above."
+            },
+            "correctAnswer": "a",
+            "explanations": {},
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. Which of the following vertices can be pushed initially in the queue in Kahn's Algorithm ?<br><img src=\"images/quiz_q2.png\">",
+            "answers": {
+                "a": "1",
+                "b": "0",
+                "c": "4",
+                "d": "Both 0 and 4."
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "d": "Vertices with indegree 0 are pushed first in the queue in Kahn\u2019s Algorithm. Indegree of Node = [0,2,1,2,0]"
+            },
+            "difficulty": "intermediate"
+        }
+    ]
+}
