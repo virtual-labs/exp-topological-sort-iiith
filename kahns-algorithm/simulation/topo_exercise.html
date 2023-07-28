@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+</head>
+  <div class="instruction-box"id="instructions">
+    <button class="collapsible"> Instructions </button>
+    <div class ="content">
+      <ul>
+        <li>Select the node that can be added to topologically sorted order.</li>
+        <li>Click on <b>Reset</b> to start over with a same graph</li>
+        <li>Click on <b>New Graph</b> to start over with a new graph</li>
+        <li>Zoom or Adjust graph by dragging nodes according to your convience</li>  
+      </ul> 
+    </div>
+  </div> 
+  <div id="que">
+    <b>Question :</b> An arrow from 'a' to 'b' represents that
+    'b' can be done only after finishing 'a'.  The given
+    graphs indicate different jobs of a company. Help the
+    company manager assign jobs in an order so that no
+    employee needs to wait for other job to be done.
+  </div>
+  <div>
+    <p id="seq"><b>Selected Order : </b></p>
+  </div>
+  <center>   
+    <div id="graph"></div> 
+  </center>
+  <div id="instruction"class="comment-box">
+    <b>Observations</b><br>
+    <p id = "ins"> </p>
+  </div>
+  <div class="buttons">
+    <button id="res" class="button-input">Reset</button>
+    <button id="rege" class="button-input">New Graph</button>
+    <button id="und" class="button-input">Undo</button>
+    <button id="subm" class="button-input">Submit</button>
+  </div>
+  <title>Topoligical Sort</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="docs/static/libs/vis.min.js"></script>
+  <script src="js/Algo.js"></script> 
+  <script src="js/data.js"></script> 
+  <link href="docs/static/libs/vis.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../assets/css/common-styles-responsive.css">
+  <link href="css/mst.css" rel="stylesheet" type="text/css" />
+  <script src="js/topo_exercise.js"></script> 
+<script src="../../assets/js/instruction-box.js"></script>
+<script src="../../assets/js/iframeResize.js"></script></body>
+</html>

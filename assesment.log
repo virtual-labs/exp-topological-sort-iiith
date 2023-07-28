@@ -1,0 +1,80 @@
+=/pretest.json
+{
+  _: [],
+  f: [
+    '/home/runner/work/exp-topological-sort-iiith/exp-topological-sort-iiith/experiment/pretest.json'
+  ],
+  files: [
+    '/home/runner/work/exp-topological-sort-iiith/exp-topological-sort-iiith/experiment/pretest.json'
+  ],
+  c: 'assessment',
+  contentTypes: 'assessment',
+  'content-types': 'assessment',
+  '$0': 'validate'
+}
+/questions/0/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+Json Error: must match "then" schema
+Json Error: must match "then" schema
+Failed while validating /home/runner/work/exp-topological-sort-iiith/exp-topological-sort-iiith/experiment/pretest.json
+Error: Schema is Invalid
+=/topological-sort/topo-quiz.json
+{
+  _: [],
+  f: [
+    '/home/runner/work/exp-topological-sort-iiith/exp-topological-sort-iiith/experiment/topological-sort/topo-quiz.json'
+  ],
+  files: [
+    '/home/runner/work/exp-topological-sort-iiith/exp-topological-sort-iiith/experiment/topological-sort/topo-quiz.json'
+  ],
+  c: 'assessment',
+  contentTypes: 'assessment',
+  'content-types': 'assessment',
+  '$0': 'validate'
+}
+Validated true
+=/kahns-algorithm/kahns-quiz.json
+{
+  _: [],
+  f: [
+    '/home/runner/work/exp-topological-sort-iiith/exp-topological-sort-iiith/experiment/kahns-algorithm/kahns-quiz.json'
+  ],
+  files: [
+    '/home/runner/work/exp-topological-sort-iiith/exp-topological-sort-iiith/experiment/kahns-algorithm/kahns-quiz.json'
+  ],
+  c: 'assessment',
+  contentTypes: 'assessment',
+  'content-types': 'assessment',
+  '$0': 'validate'
+}
+Validated true
+=/analysis/analysis-quiz.json
+{
+  _: [],
+  f: [
+    '/home/runner/work/exp-topological-sort-iiith/exp-topological-sort-iiith/experiment/analysis/analysis-quiz.json'
+  ],
+  files: [
+    '/home/runner/work/exp-topological-sort-iiith/exp-topological-sort-iiith/experiment/analysis/analysis-quiz.json'
+  ],
+  c: 'assessment',
+  contentTypes: 'assessment',
+  'content-types': 'assessment',
+  '$0': 'validate'
+}
+Validated true
+=/posttest.json
+{
+  _: [],
+  f: [
+    '/home/runner/work/exp-topological-sort-iiith/exp-topological-sort-iiith/experiment/posttest.json'
+  ],
+  files: [
+    '/home/runner/work/exp-topological-sort-iiith/exp-topological-sort-iiith/experiment/posttest.json'
+  ],
+  c: 'assessment',
+  contentTypes: 'assessment',
+  'content-types': 'assessment',
+  '$0': 'validate'
+}
+Validated true

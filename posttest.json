@@ -1,0 +1,59 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. Which of the following traversals in trees is equivalent to topological sort ?",
+            "answers": {
+                "a": "Pre-Order Traversal",
+                "b": "Post-Order Traversal",
+                "c": "In-Order Traversal",
+                "d": "None of these"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "In Topological Sort, the nodes are sorted such that the parent of a particular node always comes before the node in the ordering.<br>In Pre-Order Traversal the parent node is traversed first then childs from left to right.",
+                "b": "In Post-Order Traversal the childs are traversed from left to right than the parent node.",
+                "c": "In In-order Transversal first the order is left child , parent , right child."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "2. Which of the following are applications of topological Sorting?<br>Finding prerequisite of a task<br>Finding Deadlock in an Operating System<br>Finding Cycle in a graph",
+            "answers": {
+                "a": "1 only",
+                "b": "2 and 3 only",
+                "c": "1,2 and 3",
+                "d": "2 only"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "c": "1. Topological Sort can be used to determine which task needs to be finished first (parent node) before a task (child node) can be started.<br>2.While using threads in the Operating System, sometimes the program gets stuck in a deadlock as the commands waiting become dependent on each other. It creates a cycle of commands. Topological Sort can be  used to detect cycles in a graph as if we try to sort it the nodes appear again and again in the sequence.<br>3. Topological Sort can be  used to detect cycles in a graph as if we try to sort it the nodes appear again and again in the sequence."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "3. What is the most efficient Time Complexity of Topological Sorting?( N= number of vertices , E = number of edges)",
+            "answers": {
+                "a": "O(N+E)",
+                "b": "O(N)",
+                "c": "O(V)",
+                "d": "O(V*E)"
+            },
+            "correctAnswer": "d",
+            "explanations": {},
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "4. The topological sort of Directed Acyclic graph is always unique.",
+            "answers": {
+                "a": "False",
+                "b": "True"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "\u201cThe topological sort of a graph can be unique if we assume the graph as a single linked list and we can have multiple topological sort order if we consider a graph as a complete binary tree.\u201d"
+            },
+            "difficulty": "intermediate"
+        }
+    ]
+}

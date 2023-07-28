@@ -1,0 +1,34 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. On which of the following graphs topological sort can be applied  ?",
+            "answers": {
+                "a": "Directed Acyclic Graphs",
+                "b": "Undirected Acyclic Graphs",
+                "c": "Directed Cyclic Graphs",
+                "d": "Undirected Cyclic Graphs"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "\u201cEvery Directed Acyclic Graph has one or more topological ordering whereas Cyclic and Undirected graphs can\u2019t be ordered topologically\u201d<br>Every Directed Acyclic Graph  has one or more topological ordering.",
+                "b": "Undirected Acyclic Graphs cannot be sorted topologically as the order of the nodes in the graph is not definite as the edges are bidirectional.",
+                "c": "In a cyclic graph, topological sort is not applicable as the cycle disturbs the order of the nodes.",
+                "d": "In a cyclic graph, topological sort is not applicable as the cycle disturbs the order of the nodes."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. Which of the following data structures is used in topological Sort using DFS? ",
+            "answers": {
+                "a": "Queue",
+                "b": "Stack",
+                "c": "Linked Lists",
+                "d": "None of these"
+            },
+            "correctAnswer": "b",
+            "explanations": {},
+            "difficulty": "intermediate"
+        }
+    ]
+}
