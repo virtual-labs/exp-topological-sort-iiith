@@ -4,7 +4,7 @@
     "problems": [
         {
             "problem name": "Validate Topological Sort Order for a DAG",
-            "description": "Implement a function to determine if a given array is a valid topological sorting order of a Directed Acyclic Graph (DAG) represented as an adjacency list.",
+            "description": "Implement a function to determine if a given array is a valid topological sorting order of a Directed Acyclic Graph.",
             "inputs": [
                 {
                 "A": ["B", "C"],
@@ -16,45 +16,22 @@
                 },
                 ["A", "B", "C", "D", "E", "F"]
             ],
-            "expected": [
-                true
-            ],
-            "inputs description": "Input consists of a Directed Acyclic Graph (DAG) represented as an adjacency list and an array representing a potential topological sorting order.",
+            "expected": true,
+            "inputs description": "Input consists of a Directed Acyclic Graph represented as an adjacency list - inp1 (key is a node and its value is a list of adjacent nodes) and an array representing a potential topological sorting order - inp2.",
             "expected description": "A boolean value indicating whether the given ordering is a valid topological sort of the graph."
         },
         {
             "problem name": "Basic Implementation of Kahn's Algorithm",
-            "description": "Implement Kahn's Algorithm to perform Topological Sort on a Directed Acyclic Graph (DAG).",
+            "description": "Implement Kahn's Algorithm to perform a topological sort on a Directed Acyclic Graph (DAG).",
             "inputs": [
-                [[5, 2], [5, 0], [4, 0], [4, 1], [2, 3], [3, 1]]
+                [["A", "B"], ["A", "C"], ["B", "D"], ["C", "D"], ["D", "E"], ["C", "F"], ["E", "F"]]
             ],
             "expected": [
-                [5, 4, 2, 3, 1, 0],
-                [5, 4, 2, 3, 0, 1],
-                [5, 4, 2, 0, 3, 1],
-                [5, 4, 2, 0, 1, 3],
-                [5, 4, 0, 2, 3, 1],
-                [5, 4, 0, 2, 1, 3],
-                [5, 2, 4, 3, 1, 0],
-                [5, 2, 4, 3, 0, 1],
-                [5, 2, 4, 0, 3, 1],
-                [5, 2, 3, 4, 1, 0],
-                [5, 2, 3, 4, 0, 1],
-                [5, 2, 3, 1, 4, 0],
-                [5, 2, 3, 0, 4, 1],
-                [5, 2, 0, 4, 3, 1],
-                [5, 2, 0, 4, 1, 3],
-                [5, 2, 0, 3, 4, 1],
-                [5, 2, 0, 3, 1, 4],
-                [4, 5, 2, 3, 1, 0],
-                [4, 5, 2, 3, 0, 1],
-                [4, 5, 2, 0, 3, 1],
-                [4, 5, 0, 2, 3, 1],
-                [4, 0, 5, 2, 3, 1],
-                [4, 0, 5, 2, 1, 3]
+                ["A", "B", "C", "D", "E", "F"],
+                ["A", "C", "B", "D", "E", "F"]
             ],
-            "inputs description": "Input consists of an array of tuples - inp1, where each tuple represents a directed edge in the graph. The array may be of arbitrary length.",
-            "expected description": "An array of nodes sorted in topological order."
+            "inputs description": "Input consists of an array of directed edges, where each edge is represented as a tuple (list) of two characters [u, v], indicating a directed edge from node u to node v. The array may contain an arbitrary number of edges.",
+            "expected description": "An array of characters representing a valid topological order of the graph."
         }
 
     ]
