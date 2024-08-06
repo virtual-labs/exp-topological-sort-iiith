@@ -1,0 +1,31 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. What is the Space Complexity of Topological Sorting?( N= number of vertices , E = number of edges)",
+            "answers": {
+                "a": "O(N+E)",
+                "b": "O(N)",
+                "c": "O(V)",
+                "d": "O(V*E)"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "c": "While enqueuing a node, we need some extra space to store temporary values. Other than that, the ordering can be done in-place. Hence space complexity is O(|V|).<br>Using DFS"
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "2. What is the most efficient Time Complexity of Topological Sorting?( N= number of vertices , E = number of edges)",
+            "answers": {
+                "a": "O(N+E)",
+                "b": "O(N)",
+                "c": "O(V)",
+                "d": "O(V*E)"
+            },
+            "correctAnswer": "d",
+            "explanations": {},
+            "difficulty": "intermediate"
+        }
+    ]
+}
