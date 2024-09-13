@@ -1,0 +1,40 @@
+{
+    "version": 1,
+    "experiment name": "Topological Sort",
+    "problems": [
+        {
+            "problem name": "Validate Topological Sort Order for a DAG",
+            "description": "Implement a function to determine if a given array is a valid topological sorting order of a Directed Acyclic Graph.",
+            "inputs": [
+                {
+                "A": ["B", "C"],
+                "B": ["D"],
+                "C": ["D", "E"],
+                "D": ["F"],
+                "E": ["F"],
+                "F": []
+                },
+                ["A", "B", "C", "D", "E", "F"]
+            ],
+            "expected": true,
+            "inputs description": "Input consists of a Directed Acyclic Graph represented as an adjacency list - inp1 (key is a node and its value is a list of adjacent nodes) and an array representing a potential topological sorting order - inp2.",
+            "expected description": "A boolean value indicating whether the given ordering is a valid topological sort of the graph.",
+            "difficulty": "intermediate"
+        },
+        {
+            "problem name": "Basic Implementation of Kahn's Algorithm",
+            "description": "Implement Kahn's Algorithm to perform a topological sort on a Directed Acyclic Graph (DAG).",
+            "inputs": [
+                [["A", "B"], ["A", "C"], ["B", "D"], ["C", "D"], ["D", "E"], ["C", "F"], ["E", "F"]]
+            ],
+            "expected": [
+                ["A", "B", "C", "D", "E", "F"],
+                ["A", "C", "B", "D", "E", "F"]
+            ],
+            "inputs description": "Input consists of an array of directed edges, where each edge is represented as a tuple (list) of two characters [u, v], indicating a directed edge from node u to node v. The array may contain an arbitrary number of edges.",
+            "expected description": "An array of all possible valid topological orders for the Directed Acyclic Graph (DAG), sorted in lexicographic order. Each order is a sequence of nodes where every node precedes its successors according to the graph's edges.",
+            "difficulty": "advanced"
+        }
+
+    ]
+}
