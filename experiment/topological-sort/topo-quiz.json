@@ -11,10 +11,10 @@
             },
             "correctAnswer": "a",
             "explanations": {
-                "a": "\u201cEvery Directed Acyclic Graph has one or more topological ordering whereas Cyclic and Undirected graphs can\u2019t be ordered topologically\u201d<br>Every Directed Acyclic Graph  has one or more topological ordering.",
-                "b": "Undirected Acyclic Graphs cannot be sorted topologically as the order of the nodes in the graph is not definite as the edges are bidirectional.",
-                "c": "In a cyclic graph, topological sort is not applicable as the cycle disturbs the order of the nodes.",
-                "d": "In a cyclic graph, topological sort is not applicable as the cycle disturbs the order of the nodes."
+                "a": "Correct. Every Directed Acyclic Graph has one or more topological ordering whereas Cyclic and Undirected graphs can’t be ordered topologically. Every Directed Acyclic Graph has one or more topological ordering.",
+                "b": "Incorrect. Undirected Acyclic Graphs cannot be sorted topologically as the order of the nodes in the graph is not definite as the edges are bidirectional.",
+                "c": "Incorrect. In a cyclic graph, topological sort is not applicable as the cycle disturbs the order of the nodes.",
+                "d": "Incorrect. In a cyclic graph, topological sort is not applicable as the cycle disturbs the order of the nodes."
             },
             "difficulty": "beginner"
         },
@@ -27,7 +27,12 @@
                 "d": "None of these"
             },
             "correctAnswer": "b",
-            "explanations": {},
+            "explanations": {
+                "a": "Incorrect. Queue is used in BFS-based topological sort (Kahn's algorithm), not in DFS-based approach.",
+                "b": "Correct. Stack data structure is used in topological sort using DFS. After DFS completion for each vertex, it is pushed onto the stack, and the final topological order is obtained by popping elements from the stack.",
+                "c": "Incorrect. Linked lists are not specifically used as the primary data structure for DFS-based topological sort.",
+                "d": "Incorrect. Stack is the correct data structure used in DFS-based topological sort."
+            },
             "difficulty": "intermediate"
         }
     ]

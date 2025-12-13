@@ -4,7 +4,7 @@
     "problems": [
         {
             "problem name": "Validate Topological Sort Order for a DAG",
-            "description": "Implement a function to determine if a given array is a valid topological sorting order of a Directed Acyclic Graph.",
+            "description": "Implement a function to verify whether a given array represents a valid topological ordering of a Directed Acyclic Graph (DAG). A valid topological sort ensures that for every directed edge (u, v), vertex u appears before vertex v in the ordering. Create a position mapping from the proposed order, then iterate through all edges in the graph to check if each source vertex appears before its destination vertex in the proposed ordering. Example: For DAG with edges A→B, A→C, B→D, C→D, C→E, D→F, E→F, the order ['A','B','C','D','E','F'] is valid because all dependencies are satisfied, returning true. Only JavaScript is allowed.",
             "inputs": [
                 {
                 "A": ["B", "C"],
@@ -23,7 +23,7 @@
         },
         {
             "problem name": "Basic Implementation of Kahn's Algorithm",
-            "description": "Implement Kahn's Algorithm to perform a topological sort on a Directed Acyclic Graph (DAG).",
+            "description": "Implement Kahn's Algorithm to perform topological sorting on a Directed Acyclic Graph (DAG) and return all possible valid orderings. Kahn's algorithm computes in-degrees for all vertices, starts with vertices having zero in-degree, and iteratively removes vertices while updating in-degrees of neighbors. To find all valid orderings, use backtracking: at each step, consider all vertices with zero in-degree as potential next choices, recursively explore each choice, and backtrack to find all possible paths. Example: For edges [['A','B'], ['A','C'], ['B','D'], ['C','D'], ['D','E'], ['C','F'], ['E','F']], valid orderings include ['A','B','C','D','E','F'] and ['A','C','B','D','E','F'], both satisfying all edge constraints. Only JavaScript is allowed.",
             "inputs": [
                 [["A", "B"], ["A", "C"], ["B", "D"], ["C", "D"], ["D", "E"], ["C", "F"], ["E", "F"]]
             ],

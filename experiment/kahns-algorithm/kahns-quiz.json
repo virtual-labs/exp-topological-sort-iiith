@@ -10,7 +10,12 @@
                 "d": "None of the above."
             },
             "correctAnswer": "a",
-            "explanations": {},
+            "explanations": {
+                "a": "Correct. Indegree of a vertex is the count of the number of edges pointed towards the vertex from other vertices.",
+                "b": "Incorrect. The count of edges with the vertex as starting point is called outdegree, not indegree.",
+                "c": "Incorrect. The total number of edges connected to the vertex is the degree, not specifically indegree.",
+                "d": "Incorrect. Option a correctly defines indegree."
+            },
             "difficulty": "beginner"
         },
         {
@@ -23,7 +28,10 @@
             },
             "correctAnswer": "d",
             "explanations": {
-                "d": "Vertices with indegree 0 are pushed first in the queue in Kahn\u2019s Algorithm. Indegree of Node = [0,2,1,2,0]"
+                "a": "Incorrect. While vertex 1 may be pushed later, it's not initially pushed as it doesn't have indegree 0.",
+                "b": "Incorrect. While vertex 0 has indegree 0, there's another vertex that also has indegree 0.",
+                "c": "Incorrect. While vertex 4 has indegree 0, there's another vertex that also has indegree 0.",
+                "d": "Correct. Vertices with indegree 0 are pushed first in the queue in Kahn’s Algorithm. Indegree of Node = [0,2,1,2,0]. Both vertices 0 and 4 have indegree 0."
             },
             "difficulty": "intermediate"
         }
