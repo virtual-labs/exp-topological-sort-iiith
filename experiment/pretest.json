@@ -11,10 +11,9 @@
             },
             "correctAnswer": "b",
             "explanations": {
-                "a": "Incorrect. Graph with no edges is called an edgeless graph.",
-                "b": "Correct. Graph should have at least 1 vertex. A graph is defined as a finite set of vertices which might be connected with edges.",
-                "c": "Incorrect. Graph with no cycles is called a tree.",
-                "d": "Incorrect. Only the number of vertices must be non-zero for a graph to exist."
+                "a": "Graph with no edges is called an edgeless graph.",
+                "b": "Graph should have at least 1 vertex.<br>\u201cA graph is defined as a finite set of vertices which might be connected with edges.\u201d",
+                "c": "Graph with no cycles is called a tree."
             },
             "difficulty": "beginner."
         },
@@ -28,10 +27,7 @@
             },
             "correctAnswer": "c",
             "explanations": {
-                "a": "Incorrect. This formula n*(n+1)/2 would include self-loops which are not present in a complete graph.",
-                "b": "Incorrect. A complete graph with n vertices has much more than n edges.",
-                "c": "Correct. A complete graph is a graph in which there is an edge between each pair of vertices. So number of edges = nC2 = n*(n-1)/2.",
-                "d": "Incorrect. The formula n*(n-1)/2 correctly represents the number of edges in a complete graph."
+                "c": "\u201cA complete graph is a graph in which there is an edge between each pair of vertices. So number of edges = nC2  = n*(n-1)/2 .\u201d"
             },
             "difficulty": "intermediate"
         },
@@ -45,10 +41,10 @@
             },
             "correctAnswer": "a",
             "explanations": {
-                "a": "Correct. A regular graph is defined as a graph where all vertices have the same degree.",
-                "b": "Incorrect. Complete graph is the graph when there are edges between each pair of vertices.",
-                "c": "Incorrect. Graph with only vertex and no edges is called a Trivial Graph.",
-                "d": "Incorrect. Graph which contains at least one cycle is called a Cyclic Graph."
+                "a": "Definition in question",
+                "b": "Complete graph is the graph when there are edges between each pair of vertices.",
+                "c": "Graph with only vertex and no edges is called a Trivial Graph.",
+                "d": "Graph which contains at least one cycle is called a Cyclic Graph."
             },
             "difficulty": "beginner"
         },
@@ -62,10 +58,7 @@
             },
             "correctAnswer": "d",
             "explanations": {
-                "a": "Incorrect. This would mean n+1 nodes total, which is impossible in a graph with n nodes.",
-                "b": "Incorrect. This would mean the node is connected to itself twice, which is not allowed in a simple graph.",
-                "c": "Incorrect. This would equal n edges, meaning connection to all nodes including itself, which is not allowed in a simple graph.",
-                "d": "Correct. For some node i, the degree of the node is defined as the number of nodes which are connected by a single edge with the node i. In simple Graph there are no self-loop and multiple edges between two nodes. So maximum degree = n-1."
+                "d": "For some node i , the degree of the node is defined as the number of nodes which are connected by a single edge with the node i. In simple Graph there are no self-loop and multiple edges between two nodes. So maximum degree = n-1."
             },
             "difficulty": "advanced"
         },
@@ -79,10 +72,7 @@
             },
             "correctAnswer": "d",
             "explanations": {
-                "a": "Incorrect. Adjacency matrix contains more information than just edges.",
-                "b": "Incorrect. Adjacency matrix contains more information than just vertices.",
-                "c": "Incorrect. Adjacency matrix contains more information than just direction.",
-                "d": "Correct. An adjacency matrix is a NxN matrix where N = number of nodes in graph. A Cell of the matrix ai,j is 1 if there exists a Edge from node i to node j else ai,j is 0."
+                "d": "\u201cAn adjacency matrix is a NxN matrix where N = number of nodes in graph. A Cell of the matrix ai,j is 1 if there exists a Edge from node i to node j else ai,j  is 0.\u201d"
             },
             "difficulty": "intermediate"
         }
