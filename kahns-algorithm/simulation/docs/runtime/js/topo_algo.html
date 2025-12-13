@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-17 Wed 07:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="VLEAD" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org8ea4b60">1. Introduction</a></li>
+<li><a href="#org079f1be">2. PriorityQueue implementation</a></li>
+<li><a href="#orgaf7a8d4">3. PriorityQueue making</a></li>
+<li><a href="#org69db017">4. Graph implementation</a></li>
+<li><a href="#org80d5891">5. Adding node in graph implementation</a></li>
+<li><a href="#orgacd6195">6. Adding edge in graph implementation</a></li>
+<li><a href="#orge1c2aed">7. Adding edge in graph implementation</a></li>
+<li><a href="#org18a913a">8. Adding edge in graph implementation</a></li>
+<li><a href="#org9512181">9. Implementation of Kruskals in graph implementation</a></li>
+<li><a href="#orgc3ac24b">10. Implementation of Prims in graph implementation</a></li>
+<li><a href="#org648120a">11. Function to display graph</a></li>
+<li><a href="#org683731c">12. Function to  check.</a></li>
+<li><a href="#org158f619">13. Function to implement toposort</a></li>
+<li><a href="#org5d643d5">14. Function to undos toposort</a></li>
+<li><a href="#orgaaf652b">15. UnionFind implementation</a></li>
+<li><a href="#org3db6a19">16. Tangle</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8ea4b60" class="outline-2">
+<h2 id="org8ea4b60"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This document contains the code for Kruskals and Prims 
+It return a 2d array <code>ans</code> of two arrays 
+</p>
+<ul class="org-ul">
+<li>1. Array in sorted order of edges.</li>
+<li>2. Array to specify if it should be added to MST or not.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org079f1be" class="outline-2">
+<h2 id="org079f1be"><span class="section-number-2">2</span> PriorityQueue implementation</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>A class of PriorityQueue is made to implement</li>
+</ul>
+<p>
+PriorityQueue to use in process of finding MST 
+</p>
+<ul class="org-ul">
+<li>It is created with following helper functions :</li>
+<li>1 . enqueue, which is used to enqueue an element to PriorityQueue</li>
+<li>2 . dequeue, which is used to dequeue an element from PriorityQueue</li>
+<li>3 . clear, which is used to clear the PriorityQueue</li>
+<li>4 . display, which is used to display the PriorityQueue</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-js" id="orgd1c9d63"><span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">ans</span>=[0];
+
+
+<span style="font-weight: bold;">class</span> PriorityQueue {
+    constructor(maxSize) {
+        <span style="font-weight: bold;">if</span> (isNaN(maxSize)) {
+           maxSize = 2000;
+         }
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.maxSize = maxSize;
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.container = [];
+     }
+    display() {
+       console.log(<span style="font-weight: bold; text-decoration: underline;">this</span>.container);
+    }
+    isEmpty() {
+       <span style="font-weight: bold;">return</span> <span style="font-weight: bold; text-decoration: underline;">this</span>.container.length === 0;
+    }
+    isFull() {
+        <span style="font-weight: bold;">return</span> <span style="font-weight: bold; text-decoration: underline;">this</span>.container.length &gt;= <span style="font-weight: bold; text-decoration: underline;">this</span>.maxSize;
+     }
+    enqueue(data, priority) {
+       <span style="font-weight: bold;">if</span> (<span style="font-weight: bold; text-decoration: underline;">this</span>.isFull()) {
+          console.log(<span style="font-style: italic;">"Queue Overflow!"</span>);
+          <span style="font-weight: bold;">return</span>;
+       }
+       <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">currElem</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">this</span>.Element(data, priority);
+       <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">addedFlag</span> = <span style="font-weight: bold; text-decoration: underline;">false</span>;
+       <span style="font-weight: bold;">for</span> (<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">i</span> = 0; i &lt; <span style="font-weight: bold; text-decoration: underline;">this</span>.container.length; i++) {
+          <span style="font-weight: bold;">if</span> (currElem.priority &gt; <span style="font-weight: bold; text-decoration: underline;">this</span>.container[i].priority) {
+             <span style="font-weight: bold; text-decoration: underline;">this</span>.container.splice(i, 0, currElem);
+             addedFlag = <span style="font-weight: bold; text-decoration: underline;">true</span>; <span style="font-weight: bold;">break</span>;
+          }
+       }
+       <span style="font-weight: bold;">if</span> (!addedFlag) {
+          <span style="font-weight: bold; text-decoration: underline;">this</span>.container.push(currElem);
+       }
+    }
+    dequeue() {
+    <span style="font-weight: bold;">if</span> (<span style="font-weight: bold; text-decoration: underline;">this</span>.isEmpty()) {
+       console.log(<span style="font-style: italic;">"Queue Underflow!"</span>);
+       <span style="font-weight: bold;">return</span>;
+    }
+    <span style="font-weight: bold;">return</span> <span style="font-weight: bold; text-decoration: underline;">this</span>.container.pop();
+ }
+ 
+ clear() {
+    <span style="font-weight: bold; text-decoration: underline;">this</span>.container = [];
+    }
+ }
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgaf7a8d4" class="outline-2">
+<h2 id="orgaf7a8d4"><span class="section-number-2">3</span> PriorityQueue making</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>Class PriorityQueue is ,ade using</li>
+</ul>
+<p>
+constructor as it needs data to be allocated 
+inside the class 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js" id="org04d9b4b">
+ PriorityQueue.<span style="font-weight: bold; text-decoration: underline;">prototype</span>.Element = <span style="font-weight: bold;">class</span> {
+    constructor(data, priority) {
+       <span style="font-weight: bold; text-decoration: underline;">this</span>.data = data;
+       <span style="font-weight: bold; text-decoration: underline;">this</span>.priority = priority;
+    }
+ };
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org69db017" class="outline-2">
+<h2 id="org69db017"><span class="section-number-2">4</span> Graph implementation</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>Class graph is made to do all graph related operations as</li>
+</ul>
+<p>
+functions inside the class.
+</p>
+<div class="org-src-container">
+<pre class="src src-js" id="orgcb4854f">
+<span style="font-weight: bold;">class</span> Graph {
+    constructor() {
+       <span style="font-weight: bold; text-decoration: underline;">this</span>.edges = {};
+       <span style="font-weight: bold; text-decoration: underline;">this</span>.nodes = [];
+    }
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org80d5891" class="outline-2">
+<h2 id="org80d5891"><span class="section-number-2">5</span> Adding node in graph implementation</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>Function to add a node to graph</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-js" id="orgfd14df1"> 
+    addNode(node) {
+       <span style="font-weight: bold; text-decoration: underline;">this</span>.nodes.push(node);
+       <span style="font-weight: bold; text-decoration: underline;">this</span>.edges[node] = [];
+       ans.push(0);
+    }
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgacd6195" class="outline-2">
+<h2 id="orgacd6195"><span class="section-number-2">6</span> Adding edge in graph implementation</h2>
+</div>
+
+
+<div id="outline-container-orge1c2aed" class="outline-2">
+<h2 id="orge1c2aed"><span class="section-number-2">7</span> Adding edge in graph implementation</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>Function to add a edge to graph</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-js" id="org7b7591f">
+ 
+    addEdge(node1, node2, weight = 1) {
+       <span style="font-weight: bold; text-decoration: underline;">this</span>.edges[node1].push({ node: node2, weight: weight });
+       <span style="font-weight: bold; text-decoration: underline;">this</span>.edges[node2].push({ node: node1, weight: weight });
+    }
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org18a913a" class="outline-2">
+<h2 id="org18a913a"><span class="section-number-2">8</span> Adding edge in graph implementation</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>Function to add a directed edge to graph</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-js" id="org141f54f">
+
+    addDirectedEdge(node1, node2, weight=0) {
+      <span style="font-weight: bold; text-decoration: underline;">this</span>.edges[node1].push({node: node2,weight: weight});
+      ans[node2]++;
+   }
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org9512181" class="outline-2">
+<h2 id="org9512181"><span class="section-number-2">9</span> Implementation of Kruskals in graph implementation</h2>
+<div class="outline-text-2" id="text-9">
+<ul class="org-ul">
+<li>Function that implements Kruskals on the graph.</li>
+<li>Function creates a new graph that is MST of the original graph</li>
+<li>It sets ans to required format i.e</li>
+</ul>
+<p>
+ans[0] with sorted order of edges
+ans[1] with edge lengths if it should be added to MST.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js" id="org51d423a">
+    kruskalsMST() 
+   {
+      ans=[];
+      ans.push([0]);ans.push([0]);  
+      <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">nOfEdges</span>=0;
+        <span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">MST</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Graph</span>();
+        <span style="font-weight: bold; text-decoration: underline;">this</span>.nodes.forEach(node =&gt; MST.addNode(node));
+        <span style="font-weight: bold;">if</span> (<span style="font-weight: bold; text-decoration: underline;">this</span>.nodes.length === 0) {
+           <span style="font-weight: bold;">return</span> MST;
+        }
+     
+        <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">edgeQueue</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">PriorityQueue</span>(<span style="font-weight: bold; text-decoration: underline;">this</span>.nodes.length * <span style="font-weight: bold; text-decoration: underline;">this</span>.nodes.length);
+        
+        <span style="font-weight: bold;">for</span> (<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">node</span> <span style="font-weight: bold;">in</span> <span style="font-weight: bold; text-decoration: underline;">this</span>.edges) {
+           <span style="font-weight: bold; text-decoration: underline;">this</span>.edges[node].forEach(edge =&gt; {
+              edgeQueue.enqueue([node, edge.node], edge.weight);
+           });
+        }
+        console.log(<span style="font-style: italic;">"Array Sorted"</span>);
+        <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">uf</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">UnionFind</span>(<span style="font-weight: bold; text-decoration: underline;">this</span>.nodes);
+         <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">i</span>=0;
+        <span style="font-weight: bold;">while</span> (!edgeQueue.isEmpty() ) {
+         <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">nextEdge</span>=edgeQueue.dequeue();
+           <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">nodes</span> = nextEdge.data;
+           <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">weight</span> = nextEdge.priority;
+           <span style="font-weight: bold;">if</span>(prevnode0!==nodes[1] || prevnode1!==nodes[0]){
+           <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">prevnode0</span>=nodes[0];<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">prevnode1</span>=nodes[1];
+           ans[0].push(weight);
+           console.log(<span style="font-style: italic;">"checking edge"</span>+nodes[0]+<span style="font-style: italic;">"-&gt;"</span>+nodes[1]);<span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">Blue the nodes[0]-&gt;nodes[1]</span>
+           <span style="font-weight: bold;">if</span> (!uf.connected(nodes[0], nodes[1])) {
+              ans[1].push(weight);  
+              MST.addEdge(nodes[0], nodes[1], weight);
+              console.log(<span style="font-style: italic;">"nocycle formation due to"</span>+nodes[0]+<span style="font-style: italic;">"-&gt;"</span>+nodes[1]+<span style="font-style: italic;">"so add to mst"</span>);<span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">Green the nodes[0]-&gt;nodes[1];</span>
+              uf.union(nodes[0], nodes[1]);
+              nOfEdges++;
+           }
+           <span style="font-weight: bold;">else</span>{
+            console.log(<span style="font-style: italic;">"cycle formation due to "</span>+nodes[0]+<span style="font-style: italic;">"-&gt;"</span>+nodes[1]+<span style="font-style: italic;">" so don't add to mst"</span>);<span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">Remove or lighten the nodes[0]-&gt;nodes[1];</span>
+            ans[1].push(0);        
+           }
+           }
+        }
+        <span style="font-weight: bold;">return</span> MST;
+   }
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc3ac24b" class="outline-2">
+<h2 id="orgc3ac24b"><span class="section-number-2">10</span> Implementation of Prims in graph implementation</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>Function that implements Prims on the graph starting from</li>
+</ul>
+<p>
+node that is taken as argument.
+</p>
+<ul class="org-ul">
+<li>Function creates a new graph that is MST of the original graph</li>
+<li>It sets ans to required format i.e</li>
+</ul>
+<p>
+ans[0] with sorted order of edges
+ans[1] with edge lengths if it should be added to MST.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js" id="org1e2da49">
+
+    primsMST(a){
+       abc=[];
+       addd=[];
+       ans=[];
+       ans.push([0]);ans.push([0]);       
+      <span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">MST</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Graph</span>();
+      <span style="font-weight: bold;">if</span> (<span style="font-weight: bold; text-decoration: underline;">this</span>.nodes.length === 0) {
+         <span style="font-weight: bold;">return</span> MST;
+      }
+      <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">s</span>=<span style="font-weight: bold; text-decoration: underline;">this</span>.nodes[a];
+      
+      <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">edgeQueue</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">PriorityQueue</span>(<span style="font-weight: bold; text-decoration: underline;">this</span>.nodes.length * <span style="font-weight: bold; text-decoration: underline;">this</span>.nodes.length);
+      <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">explored</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Set</span>();
+      <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">inMst</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Set</span>();
+
+      explored.add(s);
+      MST.addNode(s);
+      console.log(<span style="font-style: italic;">"green"</span>+s);
+      inMst.add(s);
+      <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">x</span>=[];
+      <span style="font-weight: bold; text-decoration: underline;">this</span>.edges[s].forEach(edge =&gt; {
+         edgeQueue.enqueue([s, edge.node], edge.weight);
+         abc.push(edge.weight);
+         console.log(<span style="font-style: italic;">"adding edge"</span>+s+<span style="font-style: italic;">"-&gt;"</span>+edge.node);
+      });addd.push(x);
+       
+      
+      <span style="font-weight: bold;">while</span> (!edgeQueue.isEmpty()) {
+         <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">currentMinEdge</span> = edgeQueue.dequeue();
+         ans[0].push(currentMinEdge.priority);
+         console.log(<span style="font-style: italic;">"checking min edge"</span>+currentMinEdge.data[0]+<span style="font-style: italic;">"-&gt;"</span>+currentMinEdge.data[1]);
+         
+         <span style="font-weight: bold;">while</span> ( explored.has(currentMinEdge.data[1])) {
+            console.log(<span style="font-style: italic;">"min edge not accepted"</span>+currentMinEdge.data[0]+<span style="font-style: italic;">"-&gt;"</span>+currentMinEdge.data[1]);
+            ans[1].push(0);
+            <span style="font-weight: bold;">if</span>(edgeQueue.isEmpty()){<span style="font-weight: bold;">break</span>;}
+            currentMinEdge = edgeQueue.dequeue();
+            console.log(<span style="font-style: italic;">"checking next min edge"</span>+currentMinEdge.data[0]+<span style="font-style: italic;">"-&gt;"</span>+currentMinEdge.data[1]);
+            ans[0].push(currentMinEdge.priority);
+         }
+         <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">nextNode</span> = currentMinEdge.data[1];
+         
+   
+         <span style="font-weight: bold;">if</span> (!explored.has(nextNode)) {
+            MST.addNode(nextNode);
+            MST.addEdge(currentMinEdge.data[0], nextNode, currentMinEdge.priority);
+            console.log(<span style="font-style: italic;">"Add"</span>+nextNode+<span style="font-style: italic;">"-&gt;"</span>+currentMinEdge.data[0]);
+            ans[1].push(currentMinEdge.priority);
+            x=[];
+            <span style="font-weight: bold; text-decoration: underline;">this</span>.edges[nextNode].forEach(edge =&gt; {
+            
+            <span style="font-weight: bold;">if</span>(!explored.has(edge.node)){
+               edgeQueue.enqueue([nextNode, edge.node], edge.weight);
+               x.push(edge.weight);
+               console.log(<span style="font-style: italic;">"adding edge"</span>+nextNode+<span style="font-style: italic;">"-&gt;"</span>+edge.node);
+            }
+         });addd.push(x);
+   
+            
+            s = nextNode;
+            explored.add(s);
+         }
+         
+      }
+      <span style="font-weight: bold;">return</span> MST;
+   }
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org648120a" class="outline-2">
+<h2 id="org648120a"><span class="section-number-2">11</span> Function to display graph</h2>
+<div class="outline-text-2" id="text-11">
+<ul class="org-ul">
+<li>This function displays the graph</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-js" id="orgcda0fa0">      
+    
+    
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org683731c" class="outline-2">
+<h2 id="org683731c"><span class="section-number-2">12</span> Function to  check.</h2>
+<div class="outline-text-2" id="text-12">
+<ul class="org-ul">
+<li>This functions checks if indegree of a node is 0</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-js" id="orgb5ea7af">
+    check(){
+       <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">ii</span>;
+       <span style="font-weight: bold;">for</span>(ii <span style="font-weight: bold;">in</span> ans){
+          <span style="font-weight: bold;">if</span>(ii&gt;0)
+          <span style="font-weight: bold;">if</span>(ans[ii]!=-1)<span style="font-weight: bold;">return</span> 0;
+
+       }
+       <span style="font-weight: bold;">return</span> 1;
+
+    }
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org158f619" class="outline-2">
+<h2 id="org158f619"><span class="section-number-2">13</span> Function to implement toposort</h2>
+<div class="outline-text-2" id="text-13">
+<ul class="org-ul">
+<li>This function implements toposort</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-js" id="org3de0b20">
+   toposort(a){
+      console.log(<span style="font-style: italic;">"toped"</span>);
+      <span style="font-weight: bold;">if</span>(ans[a]==0){console.log(<span style="font-style: italic;">"Correct"</span>+a+ans);
+      <span style="font-weight: bold; text-decoration: underline;">this</span>.edges[a].forEach(edge =&gt; {ans[edge.node]--;});
+      ans[a]=-1;
+      <span style="font-weight: bold;">return</span> 1;
+   }
+   <span style="font-weight: bold;">else</span>{console.log(<span style="font-style: italic;">"invalid"</span>);<span style="font-weight: bold;">return</span> 0;}
+   
+         
+}
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5d643d5" class="outline-2">
+<h2 id="org5d643d5"><span class="section-number-2">14</span> Function to undos toposort</h2>
+<div class="outline-text-2" id="text-14">
+<ul class="org-ul">
+<li>This function undoes the latest change</li>
+</ul>
+<p>
+in toposort
+</p>
+<div class="org-src-container">
+<pre class="src src-js" id="org279cf21">
+revtoposort(a){
+   <span style="font-weight: bold; text-decoration: underline;">this</span>.edges[a].forEach(edge =&gt; {ans[edge.node]++;});
+   ans[a]=0;        
+}
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaaf652b" class="outline-2">
+<h2 id="orgaaf652b"><span class="section-number-2">15</span> UnionFind implementation</h2>
+<div class="outline-text-2" id="text-15">
+<ul class="org-ul">
+<li>Class UnionFind comprises of three functions to</li>
+</ul>
+<p>
+implement UnionFind Algo they are 
+</p>
+<ul class="org-ul">
+<li>1 . Union : To implement Union Algo</li>
+<li>2 . Find : To implement Find Algo</li>
+<li>3 . connected : To check if two nodes are connected and return 1</li>
+</ul>
+<p>
+if yes and 0 if not.
+</p>
+<div class="org-src-container">
+<pre class="src src-js" id="orgf1c682e">
+ <span style="font-weight: bold;">class</span> UnionFind {
+    constructor(elements) {
+       <span style="font-weight: bold; text-decoration: underline;">this</span>.count = elements.length;
+ 
+       <span style="font-weight: bold; text-decoration: underline;">this</span>.parent = {};
+ 
+       elements.forEach(e =&gt; (<span style="font-weight: bold; text-decoration: underline;">this</span>.parent[e] = e));
+    }
+ 
+    union(a, b) {
+       <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">rootA</span> = <span style="font-weight: bold; text-decoration: underline;">this</span>.find(a);
+       <span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">rootB</span> = <span style="font-weight: bold; text-decoration: underline;">this</span>.find(b);
+ 
+       <span style="font-weight: bold;">if</span> (rootA === rootB) <span style="font-weight: bold;">return</span>;
+ 
+       <span style="font-weight: bold;">if</span> (rootA &lt; rootB) {
+          <span style="font-weight: bold;">if</span> (<span style="font-weight: bold; text-decoration: underline;">this</span>.parent[b] != b) <span style="font-weight: bold; text-decoration: underline;">this</span>.union(<span style="font-weight: bold; text-decoration: underline;">this</span>.parent[b], a);
+          <span style="font-weight: bold; text-decoration: underline;">this</span>.parent[b] = <span style="font-weight: bold; text-decoration: underline;">this</span>.parent[a];
+       } <span style="font-weight: bold;">else</span> {
+          <span style="font-weight: bold;">if</span> (<span style="font-weight: bold; text-decoration: underline;">this</span>.parent[a] != a) <span style="font-weight: bold; text-decoration: underline;">this</span>.union(<span style="font-weight: bold; text-decoration: underline;">this</span>.parent[a], b);
+          <span style="font-weight: bold; text-decoration: underline;">this</span>.parent[a] = <span style="font-weight: bold; text-decoration: underline;">this</span>.parent[b];
+       }
+    }
+ 
+    find(a) {
+       <span style="font-weight: bold;">while</span> (<span style="font-weight: bold; text-decoration: underline;">this</span>.parent[a] !== a) {
+          a = <span style="font-weight: bold; text-decoration: underline;">this</span>.parent[a];
+       }
+       <span style="font-weight: bold;">return</span> a;
+    }
+ 
+    connected(a, b) {
+       <span style="font-weight: bold;">return</span> <span style="font-weight: bold; text-decoration: underline;">this</span>.find(a) === <span style="font-weight: bold; text-decoration: underline;">this</span>.find(b);
+    }
+ }
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">g</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Graph</span>();
+
+<span style="font-weight: bold;">if</span>(g.check())console.log(<span style="font-style: italic;">"finished"</span>);
+
+
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org3db6a19" class="outline-2">
+<h2 id="org3db6a19"><span class="section-number-2">16</span> Tangle</h2>
+<div class="outline-text-2" id="text-16">
+<div class="org-src-container">
+<pre class="src src-js">&lt;&lt;priority-queue&gt;&gt;
+&lt;&lt;priority-queue-making&gt;&gt;
+&lt;&lt;graph-making&gt;&gt;
+&lt;&lt;graph-addnode&gt;&gt;
+&lt;&lt;graph-addedge&gt;&gt;
+&lt;&lt;graph-add-dir-edge&gt;&gt;
+&lt;&lt;graph-kruskal&gt;&gt;
+&lt;&lt;graph-prim&gt;&gt;
+&lt;&lt;graph-check&gt;&gt;
+&lt;&lt;graph-topo&gt;&gt;
+&lt;&lt;graph-rev-topo&gt;&gt;
+&lt;&lt;graph-display&gt;&gt;
+&lt;&lt;union-find&gt;&gt;
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: VLEAD</p>
+<p class="date">Created: 2021-03-17 Wed 07:34</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. What is the Space Complexity of Topological Sorting?( N= number of vertices , E = number of edges)",
+            "answers": {
+                "a": "O(N+E)",
+                "b": "O(N)",
+                "c": "O(V)",
+                "d": "O(V*E)"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "Incorrect. O(N+E) represents time complexity, not space complexity.",
+                "b": "Incorrect. O(N) alone doesn't account for all the space requirements.",
+                "c": "Correct. While enqueuing a node, we need some extra space to store temporary values. Other than that, the ordering can be done in-place. Hence space complexity is O(|V|) using DFS.",
+                "d": "Incorrect. O(V*E) is too large for the space complexity of topological sorting."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "2. What is the most efficient Time Complexity of Topological Sorting?( N= number of vertices , E = number of edges)",
+            "answers": {
+                "a": "O(N+E)",
+                "b": "O(N)",
+                "c": "O(V)",
+                "d": "O(V*E)"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "Correct. The most efficient time complexity of Topological Sorting is O(N+E), where N is the number of vertices and E is the number of edges, as we visit each vertex and edge once.",
+                "b": "Incorrect. O(N) doesn't account for processing all the edges in the graph.",
+                "c": "Incorrect. O(V) is the same as O(N) and doesn't account for edge processing.",
+                "d": "Incorrect. O(V*E) would be much slower than the actual efficient complexity of topological sorting."
+            },
+            "difficulty": "intermediate"
+        }
+    ]
+}
